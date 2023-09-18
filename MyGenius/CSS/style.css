@@ -1,0 +1,38 @@
+h2{
+    a:link {
+        color:rgb(255, 204, 0);
+        background-color: transparent;
+        text-decoration: none;
+        padding: 10px;
+        display:inline-block
+    }
+                
+    a:visited {
+        color:rgb(255, 204, 0);
+        background-color: transparent;
+        text-decoration: none;
+        padding: 10px;
+        display:inline-block
+    }
+
+    a:hover{
+        color:rgb(48, 50, 169);
+        background-color:rgb(255, 204, 0);
+        text-decoration: none;
+        padding: 10px;
+        display:inline-block                    
+    }
+}
+p{
+    a:link {
+        color:rgb(255, 204, 0);
+        background-color: transparent;
+        text-decoration: none;
+    }
+                
+    a:visited {
+        color:rgb(255, 204, 0);
+        background-color: transparent;
+        text-decoration: none;
+    }
+}
