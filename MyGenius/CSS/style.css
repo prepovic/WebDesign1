@@ -1,45 +1,46 @@
 div{ 
-    font-family: Verdana;   
-    a:link{
-        color:rgb(255, 204, 0);
-        background-color: transparent;
-        text-decoration: none;
-        padding: 10px;
-        display:inline-block           
-    }
+    font-family: Verdana;
+    } 
 
-    a:visited{
-        color:rgb(255, 204, 0);
-        background-color: transparent;
-        text-decoration: none;
-        padding: 10px;
-        display:inline-block
-    }
-
-    a:hover{
-        color:rgb(48, 50, 169);
-        background-color:rgb(255, 204, 0);
-        text-decoration: none;
-        padding: 10px;
-        display:inline-block                    
-    }
-
+div a:link{
+    color:rgb(255, 204, 0);
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px;
+    display:inline-block           
 }
+
+div a:visited{
+    color:rgb(255, 204, 0);
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px;
+    display:inline-block
+}
+
+div a:hover{
+    color:rgb(48, 50, 169);
+    background-color:rgb(255, 204, 0);
+    text-decoration: none;
+    padding: 10px;
+    display:inline-block                    
+}
+
 p{
     font-family: Verdana;
-    a:link {
-        color:rgb(255, 204, 0);
-        background-color: transparent;
-        text-decoration: none;
+}
+p a:link {
+    color:rgb(255, 204, 0);
+    background-color: transparent;
+    text-decoration: none;
     }
                 
-    a:visited {
-        color:rgb(255, 204, 0);
-        background-color: transparent;
-        text-decoration: none;
-    }
-
+p a:visited {
+    color:rgb(255, 204, 0);
+    background-color: transparent;
+    text-decoration: none;
 }
+
 body{
     background-color:rgb(193, 193, 193)
 }
