@@ -1,13 +1,14 @@
-h2{
-    a:link {
+h2{ 
+    font-family: Verdana;   
+    a:link{
         color:rgb(255, 204, 0);
         background-color: transparent;
         text-decoration: none;
         padding: 10px;
-        display:inline-block
+        display:inline-block           
     }
-                
-    a:visited {
+
+    a:visited{
         color:rgb(255, 204, 0);
         background-color: transparent;
         text-decoration: none;
@@ -22,9 +23,10 @@ h2{
         padding: 10px;
         display:inline-block                    
     }
-    font-family: Verdana;
+
 }
 p{
+    font-family: Verdana;
     a:link {
         color:rgb(255, 204, 0);
         background-color: transparent;
@@ -36,7 +38,7 @@ p{
         background-color: transparent;
         text-decoration: none;
     }
-    font-family: Verdana;
+
 }
 body{
     background-color:rgb(193, 193, 193)
