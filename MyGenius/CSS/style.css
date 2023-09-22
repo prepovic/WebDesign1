@@ -1,7 +1,20 @@
 div{ 
     font-family: Verdana;
     } 
+/* I used chatgpt to figure out how to parent condintions I had:
+        div{
+            a:link{
+                (CSS code yada yada yada)
+            }
+        }
+    it was changed to 
 
+        div a:link{
+            (CSS code yada yada yada)
+        }
+
+    I still wrote all the css code, just to be clear
+        */
 div a:link{
     color:rgb(255, 204, 0);
     background-color: transparent;
