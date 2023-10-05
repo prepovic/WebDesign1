@@ -18,16 +18,16 @@
 
 .topnav a:hover {
     background-color:#BF8641;
-    color: black;
+    color: #F0EBF2;
 }
 
 body{
-    background-color: #D9D1A9;
+    background-color: #024959;
 }
 
 p{
     font-size: 15px;
-    color:#00060D;
+    color:#F0EBF2;
     text-decoration: none;
     font-family: "new-zen", sans-serif;
     font-weight: 300;
