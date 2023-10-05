@@ -8,7 +8,7 @@
     color: #D9A441;
     padding: 1%;
     text-decoration: none;
-    font-size: 13x;
+    font-size: 15px;
 }
 
 .topnav a:hover {
@@ -21,7 +21,7 @@ body{
 }
 
 p{
-    font-size: 13px;
+    font-size: 15px;
     color:#00060D;
     text-decoration: none;
 }
