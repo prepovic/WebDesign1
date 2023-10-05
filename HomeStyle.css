@@ -1,0 +1,32 @@
+.topnav{
+    background-color: #033859;
+}
+
+.topnav a{
+    float: left;
+    background-color: #033859;
+    color: #D9A441;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topnav a:hover {
+    background-color:#BF8641;
+    color: black;
+}
+
+body{
+    background-color: #D9D1A9;
+}
+
+p{
+    font-size: 20px;
+    color:#00060D;
+    text-decoration: none;
+}
+
+#bodylink a{
+    text-decoration: none;
+    color: #BF8641;
+}
