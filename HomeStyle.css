@@ -1,3 +1,5 @@
+
+
 .topnav{
     background-color: #033859;
 }
@@ -9,6 +11,9 @@
     padding: 1%;
     text-decoration: none;
     font-size: 15px;
+    font-family: "new-zen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .topnav a:hover {
@@ -24,6 +29,9 @@ p{
     font-size: 15px;
     color:#00060D;
     text-decoration: none;
+    font-family: "new-zen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 #bodylink a{
