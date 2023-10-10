@@ -1,0 +1,80 @@
+body{
+    background-color: gray;
+}
+
+.GridContainer{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto 25%;
+}
+
+.GridItem{
+    background-color: lightgray;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.NavBar{
+    grid-row: 1;
+    grid-column: 1 / span 3;
+}
+
+.Nav{
+    list-style: none;
+    background-color: darkgrey;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+ul.Nav li{
+    float: left;
+}
+
+ul.Nav li a{
+    text-decoration: none;
+    padding: 8px 10px;
+    display: block;
+    color:black;
+
+}
+
+ul.Nav li a:hover{
+    background-color: lightgrey;
+
+}
+
+.MainImage{
+    grid-row: 2;
+    grid-column: 1 / span 3
+}
+
+.Main1{
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+.Main1 h5{
+    text-align: left;
+}
+
+.Main2{
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}
+
+.SideNav{
+    grid-row: 3 / span 3;
+    grid-column: 3;
+}
+
+.Footer{
+    font-size: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
