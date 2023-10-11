@@ -48,8 +48,7 @@ ul.Nav li a:hover{
     grid-row: 2;
     grid-column: 1 / span 3;
     padding: 20px;
-    background-color: black; /*For browsers w/o image support */
-    background-image: linear-gradient(to right, #222222,#000000);
+    background-color: lightgrey
 }
 
 .Main1{
@@ -67,13 +66,26 @@ ul.Nav li a:hover{
     grid-column: 1;
 }
 
+
 .Sub2{
     grid-column: 2;
 }
 
 .SideNav{
-    grid-row: 3 / span 3;
+    grid-row: 3 / span 4;
     grid-column: 3;
+}
+
+.SideNav a{
+    text-decoration: none;
+    color: teal;
+    font-size: 20px;
+    display: block;
+}
+
+.SideNav li{
+    list-style-type: none;
+    padding-top: 20px;
 }
 
 .Footer{
