@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background-color: whitesmoke;
 }
 
 .GridContainer{
@@ -16,7 +16,7 @@ body{
 
 .NavBar{
     grid-row: 1;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span end;
 }
 
 .Nav{
@@ -47,7 +47,8 @@ ul.Nav li a:hover{
 .MainImage{
     grid-row: 2;
     grid-column: 1 / span 3;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: lightgrey
 }
 
@@ -96,4 +97,36 @@ ul.Nav li a:hover{
     text-align: center;
     width: 100%;
     background-color: white;
+}
+
+/*Page 2*/
+
+.image1{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    padding: 0%;
+}
+
+.desc1{
+    grid-column: 4;
+    grid-row: 2;
+    text-align: center;
+    font-size: 25px;
+    background-color: silver;
+    padding: 10px;
+}
+
+.image2{
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    padding: 0%;
+}
+
+.desc2{
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    font-size: 23px;
+    background-color: silver;
+    padding: 10px;
 }
