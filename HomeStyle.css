@@ -1,4 +1,4 @@
-.GridContainer{
+.GridContainer {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1 auto 25%;
@@ -30,7 +30,7 @@ body {
     background-color: #024959;
 }
 
-.TheRest{
+.TheRest {
     grid-row: 2;
 }
 
@@ -48,6 +48,6 @@ p {
     color: #BF8641;
 }
 
-.Links{
+.Links {
     grid-row: 3;
 }
