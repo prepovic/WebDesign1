@@ -10,7 +10,6 @@ body{
 
 .GridItem{
     background-color: lightgray;
-    text-align: center;
     font-size: 20px;
     padding: 20px;
 }
@@ -47,21 +46,29 @@ ul.Nav li a:hover{
 
 .MainImage{
     grid-row: 2;
-    grid-column: 1 / span 3
+    grid-column: 1 / span 3;
+    padding: 20px;
+    background-color: black; /*For browsers w/o image support */
+    background-image: linear-gradient(to right, #222222,#000000);
 }
 
 .Main1{
     grid-row: 3;
     grid-column: 1 / span 2;
-}
-
-.Main1 h5{
-    text-align: left;
+    text-size-adjust: 20px;
 }
 
 .Main2{
     grid-row: 4;
     grid-column: 1 / span 2;
+}
+
+.Sub1{
+    grid-column: 1;
+}
+
+.Sub2{
+    grid-column: 2;
 }
 
 .SideNav{
