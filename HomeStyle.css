@@ -1,5 +1,12 @@
+.GridContainer{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1 auto 25%;
+}
+
 .topnav {
     background-color: #033859;
+    grid-row: 1;
 }
 
 .topnav a {
@@ -8,7 +15,7 @@
     color: #D9A441;
     padding: 1%;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 100%;
     font-family: "new-zen", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -23,6 +30,10 @@ body {
     background-color: #024959;
 }
 
+.TheRest{
+    grid-row: 2;
+}
+
 p {
     font-size: 17px;
     color: #F0EBF2;
@@ -35,4 +46,8 @@ p {
 #bodylink a {
     text-decoration: none;
     color: #BF8641;
+}
+
+.Links{
+    grid-row: 3;
 }
