@@ -6,25 +6,43 @@
 #F2911B Dark Orange
 */
 
+div{
+    font-family: alfabet, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .GridContainer {
     display: grid;
     grid-gap: 0px;
     grid-template-columns: auto auto 25%;
+    margin: 10px;
 }
 
-.NavBar{
+.NavBar {
     grid-row: 1;
-    margin: -8px;
+    grid-column: 1 / span 2;
+    margin: -10px;
+    margin-bottom: 10px;
     padding: 0px;
-    background-color: #03A6A6;
+    background-color: #6E8C2E;
 }
 
-.NavBar a{
-    padding: 10px;
-    font-size: 20px;
+.NavBar li{
+    display: inline-block;
+}
+
+.NavBar li a {
+    padding: 10px 8px;
+    font-size: 25px;
     text-decoration: none;
-    color: #F2911B;
+    color: #ECF2E9;
     display: block;
+}
+
+.NavBar li a:hover {
+    background-color: #ECF2E9;
+    color: #6E8C2E;
 }
 
 .Footer {
