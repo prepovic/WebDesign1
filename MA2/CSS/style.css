@@ -16,12 +16,14 @@ div{
     display: grid;
     grid-gap: 0px;
     grid-template-columns: auto auto 25%;
+    margin: 10px;
 }
 
 .NavBar {
     grid-row: 1;
     grid-column: 1 / span 2;
-    margin: -8px;
+    margin: -10px;
+    margin-bottom: 10px;
     padding: 0px;
     background-color: #6E8C2E;
 }
