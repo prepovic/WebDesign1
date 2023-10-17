@@ -17,18 +17,25 @@ div{
     display: grid;
     grid-gap: 0px;
     grid-template-columns: auto auto 25%;
+    margin: 10px;
 }
 
 .NavBar {
     grid-row: 1;
-    margin: -8px;
+    grid-column: 1 / span 2;
+    margin: -10px;
+    margin-bottom: 10px;
     padding: 0px;
     background-color: #6E8C2E;
 }
 
+.NavBar li{
+    display: inline-block;
+}
+
 .NavBar li a {
     padding: 10px 8px;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     color: #ECF2E9;
     display: block;
@@ -46,6 +53,11 @@ div{
     bottom: 0;
     text-align: center;
     width: 100%;
+<<<<<<< HEAD
     background-color: white;
 }
 
+=======
+    background-color: #ECF2E9;
+}
+>>>>>>> 0c934ba1c5ed48a71534d2680334f05ed351b0d5
