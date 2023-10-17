@@ -20,14 +20,19 @@ div{
 
 .NavBar {
     grid-row: 1;
+    grid-column: 1 / span 2;
     margin: -8px;
     padding: 0px;
     background-color: #6E8C2E;
 }
 
+.NavBar li{
+    display: inline-block;
+}
+
 .NavBar li a {
     padding: 10px 8px;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     color: #ECF2E9;
     display: block;
