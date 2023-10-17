@@ -16,7 +16,7 @@ div{
 .GridContainer {
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: auto auto 25%;
+    grid-template-columns: auto auto;
     margin: 10px;
 }
 
@@ -53,9 +53,14 @@ div{
     bottom: 0;
     text-align: center;
     width: 100%;
+<<<<<<< HEAD
 }
 
 HEAD {
     background-color: #ECF2E9;
 }
 
+=======
+    background-color: #ECF2E9;
+}
+>>>>>>> a8afd814e45e42e1d5bda3170a995c3946cc60f0
