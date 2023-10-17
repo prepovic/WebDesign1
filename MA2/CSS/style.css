@@ -1,3 +1,4 @@
+
 /* Color palette: 
 #03A6A6 Teal
 #ECF2E9 White-ish
@@ -52,5 +53,11 @@ div{
     bottom: 0;
     text-align: center;
     width: 100%;
+<<<<<<< HEAD
     background-color: white;
 }
+
+=======
+    background-color: #ECF2E9;
+}
+>>>>>>> 0c934ba1c5ed48a71534d2680334f05ed351b0d5
