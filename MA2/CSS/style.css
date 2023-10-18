@@ -16,7 +16,7 @@ div{
 .GridContainer {
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     margin: 10px;
 }
 
