@@ -13,12 +13,19 @@
 
         .safe {
             grid-row: 3;
-            grid-column: 1 / span 2;
+            grid-column: 1;
         }
 
         .image {
-            grid-row: 2;
+            grid-row: 2 / span 3;
             grid-column: 2;
+            padding: 20px;
+            align-items: end;
+        }
+
+        #trails {
+            border: 5px solid #03A6A6;
+            width: 75%;
         }
     </style>
 </head>
@@ -34,7 +41,26 @@
             <li><a href="about.html">About us</a></li>
         </ul>
         <div class="trails">
-            <h3>Good trails near eastside</h3>
+            <h3>Good trails in the Seattle area</h3>
+            <p>One of the most important parts of biking is finding the good trails to ride, here are a few of our
+                recommended trails:</p>
+            <ul>
+                <li><h4>520 Trail:</h4>
+                    This is a 2.7 mile long trail bordering the 520 bridge. It offers beautiful views of lake
+                    Washington, however, there are 2 slight negatives. First, the trail is right next to the highway, so
+                    there is quite a lot of noise pollution. Additionally, there is a 570 ft elevation gain, so be
+                    prepared to work hard.
+                </li>
+                <li><h4>Cross Kirkland Corridor:</h4>
+                    Cross Kirkland Corridor is a 5.2 mile long trail spanning all of Kirkland. It is about 6 feet wide
+                    and generally has very little elevation gain. Most of the trail is surrounded by trees and is a very
+                    clean place to enjoy the weekend.
+                </li>
+                <li><h4>Burke Gilman Trail:</h4>
+                    Bruke Gilman trail is an 18.4 mile long trail that is a personal favorite of mine. It warps around
+                    lake Washington and is mostly shaded. Along the trail there are many parks including Log Boom Park,
+                    Matthews Beach, and Magnuson Park.</li>
+            </ul>
         </div>
         <div class="safe">
             <h3>How to bike safely</h3>
@@ -43,24 +69,26 @@
                 Administration can really help, maybe even watch the video below!
             </p>
             <table>
-                <tr><td>
-                    <ol>
-                        <li>Wear a helmet</li>
-                        <li>Ajust your bike</li>
-                        <li>Check equipment before riding</li>
-                        <li>See and be seen</li>
-                        <li>Watch for road hazards</li>
-                        <li>Avoid riding at night</li>
-                    </ol>
-                    </td><td></td>
+                <tr>
                     <td>
-                       Hello 
+                        <ol>
+                            <li>Wear a helmet</li>
+                            <li>Ajust your bike</li>
+                            <li>Check equipment before riding</li>
+                            <li>See and be seen</li>
+                            <li>Watch for road hazards</li>
+                            <li>Avoid riding at night</li>
+                        </ol>
+                    </td>
+                    <td></td>
+                    <td>
+                        <iframe width="100%" src="https://www.youtube.com/embed/6uaEj54flNg?si=NyFe6uQvKIKOzCDe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </td>
                 </tr>
             </table>
         </div>
         <div class="image">
-            <img src="Images/BlackSquare.png" alt="Image of a bike trails" width="10%">
+            <img src="Images/BikeTrails.jpg" alt="Image of a bike trails" id="trails">
         </div>
     </div>
     <div class="Footer">
