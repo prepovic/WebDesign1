@@ -1,76 +1,102 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/style.css">
   <title>Bus</title>
   <style>
-    h1{
-    color:darkolivegreen; 
-}
-
-p{
-    color: seagreen;
-}
-
-body {
-    background-color:lightgreen;
-  }
-
-h3{
-    color: green; 
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:#04AA6D;
+     .bus-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+     'one'
+     'three'
+     'five';
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
   }
   
-  li {
-    float: left;
+  .bus {
+    padding: 2rem;
+    border-radius: 0.5rem;
+     background-color: lightgrey;
   }
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  .bus:nth-child(1) {
+    grid-area: one;
+  }
+  .bus:nth-child(3) {
+    grid-area: three;
+  }
+  .bus:nth-child(5) {
+    grid-area: five;
   }
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #0b2517;
-  }
-  .active {
-    background-color: #04AA6D;
+  @media screen and (min-width: 75em) {
+    .bus-grid {
+        grid-template-areas:
+        "one one one five"
+        "three three three five";
+    }
   }
   </style>
 </head>
-
+<ul class="NavBar">
+  <span><img src="Images/Untitled-1.png" alt="Our logo goes here" width="100" style="margin: 5px;"></span>
+  <li><a href="biking.html">Biking</a></li>
+  <li><a href="carpool.html">Carpool</a></li>
+  <li><a href="bus.html">Bus info</a></li>
+  <li><a href="commonroutes.html">Common routes</a></li>
+  <li><a href="about.html">About us</a></li>
+</ul>
 <body>
-    <div class="GridContainer">
-        <ul class="NavBar">
-            <span><img src="Images/Untitled-1.png" alt="Our logo goes here" width="100" style="margin:5px"></span>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="biking.html">Biking</a></li>
-            <li><a href="carpool.html">Carpool</a></li>
-            <li><a href="commonroutes.html">Common bus routes</a></li>
-            <li><a href="about.html">About us</a></li>
-        </ul>
-    </div>
-    <h1 style="color: #F2911B;">General Bus Info</h1>
-    <h2>Current Delays / Updates</h2>
-    <div class="Footer">
-        Created by &copy; Linh Le, Molly Copeland, Peter Repovic
-    </div>
-    </div>
+  <main class="bus-grid">
+    <article class="bus flow">
+      <div class="flex">       
+      </div>
+      <h1>Why take the bus?</h1>
+      <img src="bus3.png">
+      <p>
+        "Being active helps with physical health, and taking transit instead of driving reduces stress. Buses are also safer than individual vehicles. By leaving the car at home, a person can save up to 20 pounds of carbon dioxide emissions every day. Buses keep the air cleaner." - UCLA
+      </p>
+      <p>
+      </p>
+    </article>
+    <article class="bus flow" style="background-color: white;">
+      <div class="flex">
+      </div> 
+    </article>
+    <article class="bus flow">
+      <div class="flex">
+        <img src="king_county_metro_0.png">
+        </div>
+      <p>
+       </p>
+      <p>
+      </p>
+    </article>
+    <article class="bus flow" style="background-color: white;">
+      <div class="flex">
+      </div>
+      <p>
+      </p>
+      <p>
+      </p>
+    </article>
+    <article class="bus flow">
+      <div class="flex">
+        <div>
+          <iframe src="https://kingcounty.gov/en/dept/metro/rider-tools/service-advisories" height="700"></iframe>
+        </div>
+      
+      </div>
+    </article>
+  </main>
+
+
+</body>
+
+</html>
