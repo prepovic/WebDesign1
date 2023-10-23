@@ -8,13 +8,17 @@
     <style>
         .Text1 {
             grid-row: 2;
-            grid-column: 1;
+            grid-column: 1 / span 2;
             padding: 10px
+        }
+
+        .NavBar {
+            grid-column: 1 / span 4;
         }
 
         .Image1 {
             grid-row: 2;
-            grid-column: 2;
+            grid-column: 3 / span 4;
             border: 5px solid #03A6A6;
             background-color: #03A6A6;
         }
@@ -33,14 +37,15 @@
 
         .Text2 {
             grid-row: 3;
-            grid-column: 2;
+            grid-column: 4;
             padding: 10px;
         }
 
         .Image2 {
             grid-row: 3;
-            grid-column: 1;
-            border: 5px solid #03A6A6;/*NEW FEATURE*/
+            grid-column: 1 / span 3;
+            border: 5px solid #03A6A6;
+            /*NEW FEATURE*/
             background-color: #03A6A6;
         }
 
@@ -52,16 +57,34 @@
 
         .Image3 {
             grid-row: 4;
-            grid-column: 2;
+            grid-column: 2 / span 4;
             border: 5px solid #03A6A6;
             background-color: #03A6A6;
         }
 
-        .ImageAntiPull {
-            width: 100%;
-            object-fit: cover;/*NEW FEATURE*/
+        .Text4 {
+            grid-row: 5;
+            grid-column: 3 / span 4;
         }
 
+        .Image4 {
+            grid-row: 5;
+            grid-column: 1 / span 2;
+            border: 5px solid #03A6A6;
+            background-color: #03A6A6;
+        }
+
+
+        .ImageAntiPull {
+            width: 100%;
+            object-fit: cover;
+            /*NEW FEATURE*/
+        }
+
+        .GridContainer {
+            grid-gap: 10px;
+            grid-template-columns: 25% 24% 24% 24%;
+        }
     </style>
 </head>
 
@@ -83,16 +106,16 @@
             <a href="biking.html" class="Button">Click here to learn more</a>
         </div>
         <div class="Image1">
-            <img src="Images/Biking.jpg" alt="Image about biking" height="250" class="ImageAntiPull">
+            <img src="Images/Biking.jpg" alt="Image of a person biking in the city" height="250" class="ImageAntiPull">
         </div>
         <div class="Text2">
-            <h2>Busses!</h2>
+            <h2>Buses!</h2>
             <p>Busses are a much more inclusive mode of transportation, allowing anyone to ride. Pro tip! if you are
                 below the age of 18 and use the King County Metro System, you can ride for free!</p>
             <a href="bus.html" class="Button">Click here to learn more</a>
         </div>
         <div class="Image2">
-            <img src="Images/Bus2.jpg" alt="Image about busses" height="250" class="ImageAntiPull">
+            <img src="Images/Bus.jpg" alt="Image of a lot of buses lined up" height="250" class="ImageAntiPull">
         </div>
         <div class="Text3">
             <h2>Carpool!</h2>
@@ -101,7 +124,16 @@
             <a href="carpool.html" class="Button">Click here to learn more</a>
         </div>
         <div class="Image3">
-            <img src="Images/Carpool.jpg" alt="Image about carpooling" height="250" class="ImageAntiPull">
+            <img src="Images/Carpool.jpg" alt="Image of two people carpooling" height="250" class="ImageAntiPull">
+        </div>
+        <div class="Text4">
+            <h2>Common Bus Routes!</h2>
+            <p>Sometimes it is hard to find the right bus routes around the city, so in this page you can find a few bus
+                route recommendations that can get your to and from the city quickly</p>
+            <a href="commonroutes.html" class="Button">Click here to learn more</a>
+        </div>
+        <div class="Image4">
+            <img src="Images/Bus2.jpg" alt="An image of a bus" height="250" class="ImageAntiPull">
         </div>
     </div>
     <div class="Footer">
