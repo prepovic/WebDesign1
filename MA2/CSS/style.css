@@ -6,7 +6,9 @@
 #F2A516 Light Orange
 #F2911B Dark Orange
 */
-
+body{
+    background-color: #ECF2E9;
+}
 div{
     font-family: alfabet, sans-serif;
     font-weight: 300;
@@ -16,15 +18,15 @@ div{
 .GridContainer {
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     margin: 10px;
+    margin-bottom: 20px;
 }
 
 .NavBar {
     grid-row: 1;
     grid-column: 1 / span 2;
-    margin: -10px;
-    margin-bottom: 10px;
+    margin: -10px -20px 10px -20px;
     padding: 0px;
     background-color: #6E8C2E;
 }
