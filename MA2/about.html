@@ -3,7 +3,7 @@
     
 <head>
   <link rel="stylesheet" href="CSS/style.css">
-  <title>about us</title>
+  <title>About Us - Linh</title>
   <style>
     .grid-even-columns {
   display: grid;
@@ -12,53 +12,69 @@
 .aboutusgrid {
   padding: 2rem;
   border-radius: 0.5rem;
-   background-color: lightgrey;
+  background-color:#03A6A6;
 }
+/*NEW FEATURE*/
+img:not(.exclude) {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.exclude {
+  color:aliceblue
+}
+.wrapimg {
+            border: 5px solid #03A6A6;
+            width: 100%;
+        }
   </style>
 </head>
 <div class="GridContainer">
   <ul class="NavBar">
-      <span><img src="Images/Untitled-1.png" alt="Our logo goes here" width="100" style="margin:5px"></span>
+    <span><img src="Images/Untitled-1.png" class="exclude" alt="Our logo goes here" width="100" style="margin: 5px;"></span>
       <li><a href="index.html">Home</a></li>
       <li><a href="biking.html">Biking</a></li>
+      <li><a href="bus.html">Bus Info</a></li>
       <li><a href="carpool.html">Carpool</a></li>
       <li><a href="commonroutes.html">Common bus routes</a></li>
-      <li><a href="about.html">About us</a></li>
   </ul>
 </div>
-<body>
+<body class="custom">
  <div class="container margin-block-500">
  <h1 class="fs-900 margin-block-500"></h1>
   <div class="grid-even-columns">
     <div class="aboutusgrid flow">
-      <img src="Images/linhsoccer.png">
+      <img class="wrapimg" src="Images/linhsoccer.png">
     </div>
     <div class="flow aboutusgrid">
-      <p>Molly img</p>
+      <img class="wrapimg"src="Images/molly.jpg">
     </div>
     <div class="flow aboutusgrid">
-      <p>Peter img</p>
+      <img class="wrapimg"src="Images/10.04.2023-1.png">
     </div>
     <div class="flow aboutusgrid">
-      <p>Mission Statement</p>
+      <img class="wrapimg"src="Images/Untitled-1.png">
+        </div>
+    <div class="flow aboutusgrid">
+      <h1>About Linh</h1>
+      <p>Linh is a student at Eastside Prep. She interns at Stop AAPI Hate on the side and competes in high-level online gaming to fund her concert addiction. Linh has yet to ride a bus without at least one person crying on it.</p>
     </div>
     <div class="flow aboutusgrid">
-      <p>About Linh</p>
+      <h1>About Molly</h1>
+      <p>Molly Copeland is currently a student at Eastside Prep taking the web design class during this trimester. She is a competitive equestrian,  a wordle enthusiast, a bread connoisseur, and a very cool lad in general. She continues to build her understanding of HTML and improve her knowledge of general coding format.  </p>
     </div>
     <div class="flow aboutusgrid">
-      <p>About Molly</p>
-    </div>
-    <div class="flow aboutusgrid">
-      <p>About Peter</p>
+      <h1>About Peter</h1>
+      <p>Peter Repovic is currently a student at Eastside Prep taking the web design class during this trimester. He has a strong interest in photography, rowing, and volleyball. He hopes to get some basic understanding of HTML and get a better understanding of general coding format.  </p>
     </div>
     <div class="flow aboutusgrid">
       <h1>Mission Statement</h1>
-      <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </i></p>
+      <p><i>Eastside Transport: promoting eco-friendly transit for a greener future</i> </p>
     </div>
   </div>
+</div>
+<div class="Footer">
+  Created by &copy; Linh Little
 </div>
 </body>
 

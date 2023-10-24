@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/style.css">
-  <title>Bus</title>
+  <link rel="stylesheet" href="https://use.typekit.net/ajy7jqf.css"> 
+  <title>Buses - Linh</title>
   <style>
      .bus-grid {
     display: grid;
@@ -22,7 +21,7 @@
   .bus {
     padding: 2rem;
     border-radius: 0.5rem;
-     background-color: lightgrey;
+     background-color: #03A6A6;
   }
   
   .bus:nth-child(1) {
@@ -42,53 +41,62 @@
         "three three three five";
     }
   }
+  .Button {
+            display: block;
+            text-align: center;
+            background-color: #F2911B;
+            background-image: linear-gradient(#ffaf1a, #d48019);
+            border-radius: 30px;
+            padding: 10px;
+            text-decoration: none;
+            color: #ECF2E9
+        }
   </style>
 </head>
 <ul class="NavBar">
+  <div>
   <span><img src="Images/Untitled-1.png" alt="Our logo goes here" width="100" style="margin: 5px;"></span>
+  <li><a href="index.html">Home</a></li>
   <li><a href="biking.html">Biking</a></li>
   <li><a href="carpool.html">Carpool</a></li>
-  <li><a href="bus.html">Bus info</a></li>
   <li><a href="commonroutes.html">Common routes</a></li>
   <li><a href="about.html">About us</a></li>
+  </div>
 </ul>
 <body>
   <main class="bus-grid">
     <article class="bus flow">
       <div class="flex">       
-      </div>
+      <img src="Images/bus3.png" alt="very cool bus example">
       <h1>Why take the bus?</h1>
-      <img src="bus3.png">
       <p>
         "Being active helps with physical health, and taking transit instead of driving reduces stress. Buses are also safer than individual vehicles. By leaving the car at home, a person can save up to 20 pounds of carbon dioxide emissions every day. Buses keep the air cleaner." - UCLA
       </p>
-      <p>
-      </p>
+
+    </div>
     </article>
-    <article class="bus flow" style="background-color: white;">
+    <article class="bus flow" style="background-color:#ECF2E9;">
       <div class="flex">
+              <!--Placeholder because I was struggling to keep in configuration I wanted without extra grid items-->
       </div> 
     </article>
     <article class="bus flow">
       <div class="flex">
-        <img src="king_county_metro_0.png">
+        <a href="https://kingcounty.gov/en/dept/metro/routes-and-service/schedules-and-maps" class="Button" target="_blank">Visit the bus schedule!</a>
+        <a href="https://kingcounty.gov/en/dept/metro/travel-options/bus" class="Button" target="_blank">Learn more about King County buses!</a>
+        <a href="https://kingcounty.gov/en/dept/metro/fares-and-payment/prices" class="Button" target="_blank">See fares and payment!</a>
+        <a href="https://kingcounty.gov/en/dept/metro/fares-and-payment/discounted-fares/subsidized-annual-pass" class="Button" target="_blank">See if you qualify for a free annual bus pass!</a>
         </div>
-      <p>
-       </p>
-      <p>
-      </p>
     </article>
-    <article class="bus flow" style="background-color: white;">
+    <article class="bus flow" style="background-color:#ECF2E9;">
+      <!--Placeholder because I was struggling to keep in configuration I wanted without extra grid items-->
       <div class="flex">
       </div>
-      <p>
-      </p>
-      <p>
-      </p>
     </article>
     <article class="bus flow">
       <div class="flex">
         <div>
+          <!--NEW FEATURE-->
           <iframe src="https://kingcounty.gov/en/dept/metro/rider-tools/service-advisories" height="700"></iframe>
         </div>
       
@@ -96,7 +104,9 @@
     </article>
   </main>
 
-
+  <div class="Footer">
+    Created by &copy; Linh Little
+</div>
 </body>
 
 </html>
