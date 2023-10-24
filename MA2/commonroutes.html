@@ -1,11 +1,409 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-
-=======
->>>>>>> 1197ddebc02f426f2bc1badc9359c111cdc88828
 <head>
     <title>Common Routes</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+    <style>::-webkit-scrollbar{
+        width:10px;
+        height:10px;
+       background-color: rgba(0,0,0,0.2);
+    }
+    ::-webkit-scrollbar:hover{
+        background-color: rgba(0,0,0,0.3);
+    }
+    ::-webkit-resizer{
+        -webkit-border-radius:4px;
+        background-color: rgba(255,255,255,0.5);
+    }
+    ::-webkit-scrollbar-thumb{
+        min-height:8pm;
+        min-width:8pm;
+        background-color: rgba(0,0,0,0.5);
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background-color: rgba(0,0,0,0.6);
+    }
+    ::-webkit-scrollbar-thumb:active{
+        background-color: rgba(0,0,0,0.7);
+    }
+    
+    .body
+    {
+        clear: both; 
+        margin: 0 auto;
+        width: 70%;
+    }
+    
+    h1 {
+        color: #fff;
+        font-size: 28px; 
+        font-family: 'Lobster', 'Lucida Sans', Arial, sans-serif;
+        line-height: 28px;
+        text-align:right;
+        float:right;
+        margin:30px 30px 0 0;
+    }	
+    
+    h2 {font-size: 22px}
+    h3 {font-size: 20px}
+    h4 {font-size: 18px}
+    h5 {font-size: 16px}
+    h6 {font-size: 14px}
+    
+    h2, h3, h4, h5, h6 {
+        font-weight: 400;
+        line-height: 15px;
+        margin-bottom: 5px;
+    }
+    
+    
+    a {
+        outline: 0;
+        }
+    
+    a img {
+        border: 0px; 
+        text-decoration: none;
+    }
+    
+    a:link, a:visited {
+        color: #CF5C3F;
+        padding: 0 1px;
+        text-decoration: none;
+    }
+    
+    a:hover, a:active {
+        background-color: rgba(207,92,63,0.5);
+        color: #fff;
+        text-decoration: none;
+    }
+    
+       
+    .header nav {
+        background: rgba(0,0,0,0.3);
+        font-size: 1.143em;
+        height: 40px;
+        line-height: 30px;
+        margin: 0 auto 30px auto;
+        text-align: center;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+        
+    .header nav ul {
+        list-style: none; 
+        margin: 0 auto;
+    }
+    
+    .header nav ul li {
+        float: left; 
+        display: inline; 
+    }
+        
+    .header nav a:link, .header nav a:visited {
+        color: #fff;
+        display: inline-block;
+        height: 30px;
+        padding: 5px 23px;
+        text-decoration: none;
+    }
+    .header nav a:hover, .header nav a:active,
+    .header nav .active a:link, .header nav .active a:visited {
+        background-color: rgba(207,92,63,0.5);
+        color: #fff;
+        text-shadow: none !important;
+    }
+        
+    .header nav li a {
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    
+    .header img {
+        width: 30%;
+        height: auto;
+        margin: 3% 0;
+    }
+    
+    .mainContent {
+        overflow: hidden;
+        line-height: 25px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    
+    .content-1 {
+          background-color: rgba(255,255,255,0.8);	border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;	
+        padding: 3% 5%;	
+        margin-bottom: 3%;
+    }
+    
+    .content-2 {
+          background-color: rgba(255,255,255,0.8);	border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;	
+        padding: 3% 5%;
+    }
+    
+    .content {
+        width: 68%;
+        float: left;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;	
+    }
+    
+    .post-from {
+        font-style: italic;
+        color: #999;
+        font-size: 85%;
+    }
+    
+    
+    .sidebar-1 {
+        width: 24%;
+        float: left;
+        margin-left: 2%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;	
+          background-color: rgba(255,255,255,0.8);	padding: 2% 3%;
+        margin-bottom: 2%;
+    }
+    
+    .sidebar-2 {
+        width: 24%;
+        float: left;
+        margin-left: 2%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;	
+          background-color: rgba(255,255,255,0.8);	padding: 2% 3%;
+        margin-bottom: 2%;
+    }
+    
+    .sidebar-3 {
+        width: 24%;
+        float: left;
+        margin-left: 2%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;	
+          background-color: rgba(255,255,255,0.8);	padding: 2% 3%;
+    }
+    
+    .footer {
+        width: 100%;
+        float: left;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-left: 0;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;	
+        color: #FFF;	
+    }
+    
+    .footer p {
+        width: 91%;
+        margin: 2% auto;
+    }
+    
+    
+    @media only screen and (min-width : 10px) and (max-width : 700px)
+    {
+        .body {
+            clear: both; 
+            margin: 0 auto;
+        padding:0;
+            width: 90%;
+            font-size: 90%;
+        }
+        h1 {
+            font-size: 1.143em;
+    }	
+    
+    
+        .header nav {
+          background-color: rgba(0,0,0,0.5);
+            font-size: 1.143em;
+            height: 160px;
+            line-height: 30px;
+            margin-bottom: 0;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+            
+        .header nav ul {
+            list-style: none; 
+            margin: 0 auto;
+            padding-left: 0;
+        }
+        
+        .header nav li {
+            margin-left: 0 auto;
+            width: 100%;
+        }
+        
+        .header nav a:link, .header nav a:visited {
+            color: #FFF;
+            display: block;
+            height: 30px;
+            padding: 5px 0;
+            text-decoration: none;
+        }
+        
+        .header nav a:active,
+        .header nav .active a:link, .header nav .active a:visited {
+          background-color: rgba(207,92,63,0.5);
+            color: #fff;
+            text-shadow: none !important;
+        }
+            
+        .header nav li a {
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+                
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+        
+        .header img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 3%;
+        }
+        
+        .mainContent {
+            overflow: hidden;
+            line-height: 25px;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
+        
+        .content-1 {
+              background-color: rgba(255,255,255,0.8);
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;	
+            padding: 2% 5%;
+            margin-bottom: 4%;
+        }
+        
+        .content-2 {
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;	
+            padding: 2% 5%;
+        }
+        
+        .content {
+            width: 100%;
+            float: left;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;	
+        }	
+    
+        .post-from {
+            display: none;
+        }
+        
+        .sidebar-1 {
+            width: 86%;
+            float: left;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;	
+            background-color: rgba(255,255,255,0.8);
+            margin-top: 4%;
+            margin-left: 0;
+            padding: 0 7%;
+            margin-bottom: 0;	
+        }
+        
+        .sidebar-1 p {
+            width: 90%;
+        }
+    
+        .sidebar-2 {
+            width: 86%;
+            float: left;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;	
+            background-color: rgba(255,255,255,0.8);
+            margin-top: 4%;
+            margin-left: 0;
+            padding: 0 7%;
+            margin-bottom: 0;	
+        }
+        
+        .sidebar-2 p {
+            width: 90%;
+        }
+        
+        .sidebar-3 {
+            width: 86%;
+            float: left;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;	
+            background-color: rgba(255,255,255,0.8);		
+            margin-top: 4%;
+            margin-left: 0%;
+            padding: 0 7%;
+            margin-bottom: 1%;
+        }
+        
+        .sidebar-3 p {
+            width: 90%;
+        }
+            
+        .footer p {
+            width: 86%;
+            margin: 2% auto;
+        }
+    }
+    .div-img{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+  padding-top: 1ch;
+}
+  /*NEW FEATURE:*/
+
+h4 img{
+    transition: transform .2s;
+    width:100px;
+    height:80px;
+    margin:0 auto;
+    background-color: #03A6A6;
+    border-radius: 10px;
+    border: 1px solid #03A6A6;
+}
+
+/*NEW FEATURE:*/
+h4 img:hover{
+    transform:scale(2.6);
+}
+    </style>
+<head>
+    <title>Carpool</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -18,22 +416,84 @@
         <li><a href="carpool.html">Carpool</a></li>
         <li><a href="about.html">About us</a></li>
     </ul>
+<h1 style="color: #F2911B;">Common Routes!</h1>
 </div>
-
-
-
-<body>
-    <h1 style="color: #F2911B">Common routes</h1>
-    <p><i>Contexxtttt</i></p>
-
-    <div class="Footer">
-        Created by &copy; Molly Copeland
-    </div>
+    <div class="body">
+                
+            <div class="mainContent">
+                <div class="content">	
+                        <article class="content-1">	
+                            <header>
+                                <h2><a href="#" rel="bookmark" title="Permalink to this POST TITLE" style="color: #03A6A6;">EPS Transportation Routes:</a></h2>
+                            </header>
+                            <footer>
+                                <p class="post-from">EPS Bus services/METRO, and best suitible routes!</p>
+                            </footer>
+                            
+                            <content>
+                                <p>Eastside Prep offers bus service to several locations around the Puget Sound region. EPS offers three bus routes.</p>
+                                <p>With EPS located across the street from the South Kirkland Park and Ride, some of our students elect to take the King County Metro bus to and from school. More information on potential bus routes can be found on the King County Metro website:
+                                    <a href="https://tripplanner.kingcounty.gov/#/app/tripplanning">Metro Trip Planner</a></p>
+                                            <p><a href="https://www.eastsideprep.org/prospective-families/transportation/">This</a> is a link to the EPS Stop Locations and general knowledge of transportation regarding the schoo. Stops from Seattle-Rention (Morning + Afternoon included)</p>
+                            </content>
+                            
+                        </article>
+        
+                        <article class="content-2">	
+                            <header>
+                                <h2><a href="#" rel="bookmark" title="Permalink to this POST TITLE" style="color: #03A6A6;">More on Common Routes:</a></h2>
+                            </header>
+        
+                            <footer>
+                                <p class="post-from">Why is this important?</p>
+                            </footer>
+                            
+                            <content>
+                                <p>Common routes/bus routes contribute to sustainability by reducing traffic congestion, lowering emissions, and promoting energy efficiency.</p>
+                                 <p>They encourage public transportation usage, influence urban development positively, conserve resources, and promote social equity by making transportation accessible to a wide range of people.</p>
+                                <p>These factors collectively contribute to a more sustainable and eco-friendly transportation system.</p>
+                            </content>
+                        
+                        </article>
+                </div>
+                    
+                        <aside class="sidebar-1">
+                            <article>
+                            <h2 style="color: #03A6A6;">EPS Carpool Map:</h2>
+                            <div class="div-img">
+                                <h4><img src="https://www.eastsideprep.org/wp-content/uploads/2021/10/carpool-map.jpg" alt="map"></h4>
+                            </article>
+                        </aside>
+                        
+                        <aside class="sidebar-2">
+                            <article>
+                            <h2 style="color: #03A6A6;">Safety:</h2>
+                            <p>Being safe on buses/metros is essential to protect yourself and others from potential harm, accidents, and emergencies. Reminder to stay safe and be respectful!</p>
+                            </article>
+                        </aside>				
+        
+                        <aside class="sidebar-3">
+                            <article>
+                            <h2 style="color: #03A6A6;">Video (buses>cars):</h2>
+                            <p><iframe width="200" height="190" src="https://www.youtube.com/embed/Iic0b_lYJSk?si=f7tlR03JucgKvlgP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                            </article>
+                        </aside>	
+            </div>
+            
+            <div class="Footer">
+                Created by &copy; Linh Le, Molly Copeland, Peter Repovic
+            </div>
+          
+        </div>
 </body>
 
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 </html>
 =======
+>>>>>>> 009c2097a20a5cb75bff49d8f36b4ff0a7309dc6
 </html>
 
 >>>>>>> 1197ddebc02f426f2bc1badc9359c111cdc88828
