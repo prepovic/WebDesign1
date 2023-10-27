@@ -27,7 +27,7 @@
             <label for="Photos">I shoot photography on a sony camera</label><br>
             <input type="submit" value="Submit" onclick=check()>
         </form>
-        <p id="end"></p>
+        <p id="end1"></p>
         <hr>
         <h2>Select the <i>TWO</i> lies</h2>
         <form>
@@ -39,7 +39,7 @@
             <label for="Row">I have a 8 minute 2k in rowing</label><br>
             <input type="submit" value="Submit" onclick=checkMany()>
         </form>
-        
+        <p id="end2"></p>
     </div>
 
     <script>
@@ -50,7 +50,7 @@
         }
 
         function check() {
-            let answerTag = document.getElementById("end")
+            let answerTag = document.getElementById("end1")
             if (document.getElementById("Photos").checked) {
                 answerTag.innerHTML = "Lie";
                 answerTag.style.color = "Red";
@@ -70,11 +70,17 @@
         }
 
         function checkMany() {
-            if (document.getElementById("Sky").checked && document.getElementById("Row").checked) {
-                alert("Nice job guessing the two lies")
+            let goTag = document.getElementById("end2")
+
+            if (document.getElementById("Sky").checked && document.getElementById("Row").checked){
+                goTag.innerHTML = "All lies selected";
+                goTag.style.color = "Red";
+                goTag.style.display = "Block";
             }
             else {
-                alert("Not there yet, keep trying")
+                goTag.innerHTML = "All lies not selected";
+                goTag.style.color = "Green";
+                goTag.style.display = "Block";
             }
 
         }
