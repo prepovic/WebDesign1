@@ -16,31 +16,31 @@
         <input type="submit" value="Submit" onclick="hello()">
     </form>
     <hr>
-    <div id="Qs">
-        <h2>Select the lie</h2>
-        <form>
-            <input type="radio" id="NYC" name="Question1">
-            <label for="NYC">I was born in New York</label><br>
-            <input type="radio" id="Vball" name="Question1">
-            <label for="Vball">I placed 3rd at volleyball nationals</label><br>
-            <input type="radio" id="Photos" name="Question1">
-            <label for="Photos">I shoot photography on a sony camera</label><br>
-            <input type="submit" value="Submit" onclick=check()>
-        </form>
-        <p id="end1"></p>
-        <hr>
-        <h2>Select the <i>TWO</i> lies</h2>
-        <form>
-            <input type="checkbox" id="Storm" name="Question2">
-            <label for="Storm">I experianced a hurriance on the Saffir-Simpson Hurricane Wind Scale</label><br>
-            <input type="checkbox" id="Sky" name="Question2">
-            <label for="Sky">I went skidiving for the first time when I was 10</label><br>
-            <input type="checkbox" id="Row" name="Question2">
-            <label for="Row">I have a 8 minute 2k in rowing</label><br>
-            <input type="submit" value="Submit" onclick=checkMany()>
-        </form>
-        <p id="end2"></p>
-    </div>
+
+    <h2>Select the lie</h2>
+    <form>
+        <input type="radio" id="NYC" name="Question1">
+        <label for="NYC">I was born in New York</label><br>
+        <input type="radio" id="Vball" name="Question1">
+        <label for="Vball">I placed 3rd at volleyball nationals</label><br>
+        <input type="radio" id="Photos" name="Question1">
+        <label for="Photos">I shoot photography on a sony camera</label><br>
+        <input type="submit" value="Submit" onclick=check()>
+    </form>
+    <p id="end1"></p>
+    <hr>
+    <h2>Select the <i>TWO</i> lies</h2>
+    <form>
+        <input type="checkbox" id="Storm" name="Question2">
+        <label for="Storm">I experianced a hurriance on the Saffir-Simpson Hurricane Wind Scale</label><br>
+        <input type="checkbox" id="Sky" name="Question2">
+        <label for="Sky">I went skidiving for the first time when I was 10</label><br>
+        <input type="checkbox" id="Row" name="Question2">
+        <label for="Row">I have a 8 minute 2k in rowing</label><br>
+        <input type="submit" value="Submit" onclick=checkMany()>
+    </form>
+    <p id="end2"></p>
+
 
     <script>
         function hello() {
@@ -72,7 +72,7 @@
         function checkMany() {
             let goTag = document.getElementById("end2")
 
-            if (document.getElementById("Sky").checked && document.getElementById("Row").checked){
+            if (document.getElementById("Sky").checked && document.getElementById("Row").checked) {
                 goTag.innerHTML = "All lies selected";
                 goTag.style.color = "Red";
                 goTag.style.display = "Block";
