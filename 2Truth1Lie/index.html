@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
 </head>
 
 <body>
@@ -14,21 +13,72 @@
         <input type="text" id="Name1" name="Name1"><br>
         <label for="Name2">Last name:</label><br>
         <input type="text" id="Name2" name="Name2"><br><br>
-        <input type="submit" value="Submit" onclick="document.getElementById('Qs').style.display='block'">
+        <input type="submit" value="Submit" onclick="hello()">
     </form>
     <hr>
     <div id="Qs">
         <h2>Select the lie</h2>
         <form>
-            <input type="radio" id="NYC" name="Question1" value="True">
+            <input type="radio" id="NYC" name="Question1">
             <label for="NYC">I was born in New York</label><br>
-            <input type="radio" id="Vball" name="Question1" value="True">
+            <input type="radio" id="Vball" name="Question1">
             <label for="Vball">I placed 3rd at volleyball nationals</label><br>
-            <input type="radio" id="Photos" name="Question1" value="Lie">
+            <input type="radio" id="Photos" name="Question1">
             <label for="Photos">I shoot photography on a sony camera</label><br>
-            <input type="submit" value="Submit" onclick=>
+            <input type="submit" value="Submit" onclick=check()>
         </form>
+        <p id="end"></p>
+        <hr>
+        <h2>Select the <i>TWO</i> lies</h2>
+        <form>
+            <input type="checkbox" id="Storm" name="Question2">
+            <label for="Storm">I experianced a hurriance on the Saffir-Simpson Hurricane Wind Scale</label><br>
+            <input type="checkbox" id="Sky" name="Question2">
+            <label for="Sky">I went skidiving for the first time when I was 10</label><br>
+            <input type="checkbox" id="Row" name="Question2">
+            <label for="Row">I have a 8 minute 2k in rowing</label><br>
+            <input type="submit" value="Submit" onclick=checkMany()>
+        </form>
+        
     </div>
+
+    <script>
+        function hello() {
+            let name1 = document.getElementById('Name1').value;
+            let name2 = document.getElementById('Name2').value;
+            alert("Welcome " + name1 + " " + name2)
+        }
+
+        function check() {
+            let answerTag = document.getElementById("end")
+            if (document.getElementById("Photos").checked) {
+                answerTag.innerHTML = "Lie";
+                answerTag.style.color = "Red";
+                answerTag.style.display = "Block";
+            }
+            if (document.getElementById("NYC").checked) {
+                answerTag.innerHTML = "True";
+                answerTag.style.color = "Green";
+                answerTag.style.display = "Block";
+            }
+            if (document.getElementById("Vball").checked) {
+                answerTag.innerHTML = "True";
+                answerTag.style.color = "Green";
+                answerTag.style.display = "Block";
+            }
+
+        }
+
+        function checkMany() {
+            if (document.getElementById("Sky").checked && document.getElementById("Row").checked) {
+                alert("Nice job guessing the two lies")
+            }
+            else {
+                alert("Not there yet, keep trying")
+            }
+
+        }
+    </script>
 </body>
 
 </html>
