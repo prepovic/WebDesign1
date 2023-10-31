@@ -15,32 +15,39 @@
         <input type="text" id="Name2" name="Name2"><br><br>
         <input type="submit" value="Submit" onclick="hello()">
     </form>
-    <hr>
 
-    <h2>Select the lie</h2>
+    <h3>Put in the password (Try "password")</h3>
     <form>
-        <input type="radio" id="NYC" name="Question1">
-        <label for="NYC">I was born in New York</label><br>
-        <input type="radio" id="Vball" name="Question1">
-        <label for="Vball">I placed 3rd at volleyball nationals</label><br>
-        <input type="radio" id="Photos" name="Question1">
-        <label for="Photos">I shoot photography on a sony camera</label><br>
-        <input type="button" value="Submit" onclick=check()>
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" name="pass"><br>
+        <input type="button" value="Submit" onclick="checkPass()">
     </form>
-    <p id="end1"></p>
     <hr>
-    <h2>Select the <i>TWO</i> lies</h2>
-    <form>
-        <input type="checkbox" id="Storm" name="Question2">
-        <label for="Storm">I experianced a hurriance on the Saffir-Simpson Hurricane Wind Scale</label><br>
-        <input type="checkbox" id="Sky" name="Question2">
-        <label for="Sky">I went skidiving for the first time when I was 10</label><br>
-        <input type="checkbox" id="Row" name="Question2">
-        <label for="Row">I have a 8 minute 2k in rowing</label><br>
-        <input type="button" value="Submit" onclick=checkMany()>
-    </form>
-    <p id="end2"></p>
-
+<div id="Qs" style="display: none;">
+        <h2>Select the lie</h2>
+        <form>
+            <input type="radio" id="NYC" name="Question1">
+            <label for="NYC">I was born in New York</label><br>
+            <input type="radio" id="Vball" name="Question1">
+            <label for="Vball">I placed 3rd at volleyball nationals</label><br>
+            <input type="radio" id="Photos" name="Question1">
+            <label for="Photos">I shoot photography on a sony camera</label><br>
+            <input type="button" value="Submit" onclick=check()>
+        </form>
+        <p id="end1"></p>
+        <hr>
+        <h2>Select the <i>TWO</i> lies</h2>
+        <form>
+            <input type="checkbox" id="Storm" name="Question2">
+            <label for="Storm">I experianced a hurriance on the Saffir-Simpson Hurricane Wind Scale</label><br>
+            <input type="checkbox" id="Sky" name="Question2">
+            <label for="Sky">I went skidiving for the first time when I was 10</label><br>
+            <input type="checkbox" id="Row" name="Question2">
+            <label for="Row">I have a 8 minute 2k in rowing</label><br>
+            <input type="button" value="Submit" onclick=checkMany()>
+        </form>
+        <p id="end2"></p>
+    </div>
 
     <script>
         function hello() {
@@ -83,6 +90,18 @@
                 goTag.style.display = "Block";
             }
 
+        }
+
+        function checkPass(){
+
+            if (document.getElementById("pass").value == 'password') {
+                document.getElementById("Qs").style.display = "Block";
+                alert("Hello")
+            }
+
+            else{
+                document.getElementById("Qs").style.display = "None";
+            }
         }
     </script>
 </body>
