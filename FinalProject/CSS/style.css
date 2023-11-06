@@ -1,0 +1,37 @@
+.GridContainer {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 16.66% 16.66% 16.68% 16.68% 16.66% 16.66%;
+}
+
+.NavBar {
+    grid-row: 1;
+    grid-column: 1 / span 6;
+    margin: -10px;
+    padding: 20px 10px;
+    background-color: #7B0200;
+    font-family: "obvia", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#leftImg {
+    height: 75px;
+    grid-column: 1;
+}
+
+#rightImg {
+    height: 75px;
+    grid-column: 6;
+    align-items: end;
+    
+}
+
+.NavBar a {
+    grid-column: 2 / span 5;
+    text-decoration: none;
+    color: #F5DCB4;
+    padding: 0px 10px;
+    padding: 10px;
+    font-size: 20px;
+}
