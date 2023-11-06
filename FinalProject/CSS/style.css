@@ -1,6 +1,10 @@
-body{
+body {
     background-color: #0E1826;
+    font-family: "obvia", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 .GridContainer {
     display: grid;
     grid-gap: 0px;
@@ -20,6 +24,8 @@ body{
     font-weight: 600;
     font-style: normal;
     margin: -10px;
+    text-align: center;
+    align-items: center;
 }
 
 #leftImg {
@@ -29,35 +35,64 @@ body{
     position: absolute;
     left: 0px;
     padding: 0px 10px 10px;
-    margin-top: 5px ;
-    
+    margin-top: 5px;
+
 }
 
 #rightImg {
     height: 70px;
-    grid-column: 6;
-    grid-row: 1;
-    position:absolute;
+    position: absolute;
     right: 0px;
     padding: 0px 10px 10px;
-    margin-top: 5px ;
+    margin-top: 5px;
 }
 
-.NavBar{
-    grid-column: 2 / span 4;  
-    text-align: center;
-    align-items: center;
-}
 
-.NavBar a{
+.NavBar a {
     text-decoration: none;
     color: #F5DCB4;
-    padding: 25px 20px;
+    padding: 30px 20px;
     font-size: 20px;
     display: inline-block;
 }
 
-.NavBar a:hover{
-    background-color: black;
-    background-image: radial-gradient(#F5A851,#F2490C, #7B0200 70%);
+.NavBar a:hover {
+    background-color: white;
+    background-image: radial-gradient(#F5A851, #F2490C, #7B0200 70%);
+}
+
+.Footer {
+    font-size: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #F5DCB4;
+}
+
+#IntroVid{
+    grid-row: 2;
+    grid-column: 3 / span 6;
+    padding-top: 20px;
+    width: 100%;
+
+}
+
+#IntroText{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    color: #F5DCB4;
+    font-size: 18px;
+}
+
+#IntroTable{
+    grid-row: 3;
+    grid-column: 1 / span 6;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#IntroTable tr td{
+    border: 3px solid #7B0200;
 }
