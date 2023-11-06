@@ -3,6 +3,7 @@ body {
     font-family: "obvia", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #F5DCB4;
 }
 
 .GridContainer {
@@ -57,8 +58,29 @@ body {
 }
 
 .NavBar a:hover {
-    background-color: white;
-    background-image: radial-gradient(#F5A851, #F2490C, #7B0200 70%);
+    animation: fadeIn 1s infinite;
+}
+
+@keyframes fadeIn {
+    0%{
+        background: #7B0200;
+    }
+
+    25% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 10%);
+    }
+
+    50% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 30%);
+    }
+
+    75% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 50%);
+    }
+
+    100% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 70%);
+    }
 }
 
 .Footer {
@@ -71,7 +93,7 @@ body {
     background-color: #F5DCB4;
 }
 
-#IntroVid{
+#IntroVid {
     grid-row: 2;
     grid-column: 3 / span 6;
     padding-top: 20px;
@@ -79,20 +101,21 @@ body {
 
 }
 
-#IntroText{
+#IntroText {
     grid-row: 2;
     grid-column: 1 / span 2;
     color: #F5DCB4;
     font-size: 18px;
 }
 
-#IntroTable{
+#IntroTable {
     grid-row: 3;
     grid-column: 1 / span 6;
     border-collapse: collapse;
     margin-top: 10px;
+    text-align: center;
 }
 
-#IntroTable tr td{
+#IntroTable tr td {
     border: 3px solid #7B0200;
 }
