@@ -58,29 +58,54 @@ body {
 }
 
 .NavBar a:hover {
-    animation: fadeIn 1s infinite;
+    animation: fadeIn 0.5s both;
 }
 
 @keyframes fadeIn {
-    0%{
+    0% {
         background: #7B0200;
     }
 
-    25% {
-        background: radial-gradient(#F5A851, #F2490C, #7B0200 10%);
+    10% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 7%);
+    }
+
+    20% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 14%);
+    }
+
+    30% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 21%);
+    }
+
+    40% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 28%);
     }
 
     50% {
-        background: radial-gradient(#F5A851, #F2490C, #7B0200 30%);
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 35%);
     }
 
-    75% {
-        background: radial-gradient(#F5A851, #F2490C, #7B0200 50%);
+    60% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 42%);
+    }
+
+    70% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 49%);
+    }
+
+    80% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 56%);
+    }
+
+    95% {
+        background: radial-gradient(#F5A851, #F2490C, #7B0200 63%);
     }
 
     100% {
         background: radial-gradient(#F5A851, #F2490C, #7B0200 70%);
     }
+
 }
 
 .Footer {
@@ -106,6 +131,7 @@ body {
     grid-column: 1 / span 2;
     color: #F5DCB4;
     font-size: 18px;
+    padding: 10px;
 }
 
 #IntroTable {
@@ -118,4 +144,9 @@ body {
 
 #IntroTable tr td {
     border: 3px solid #7B0200;
+}
+
+#IntroTable tr td a {
+    color: #F2490C;
+    text-decoration: none;
 }
