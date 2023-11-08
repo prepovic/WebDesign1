@@ -9,7 +9,7 @@ body {
 .GridContainer {
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 16.66% 16.66% 16.68% 16.68% 16.66% 16.66%;
+    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.68% 16.68%;
 }
 
 .NavColor {
