@@ -6,7 +6,93 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/uvz6uvh.css">
     <style>
+        .Img1 {
+            grid-column: 2;
+            grid-row: 2;
+        }
 
+        .Img2 {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .Img3 {
+            grid-column: 4;
+            grid-row: 2;
+        }
+
+        .Img4 {
+            grid-column: 5;
+            grid-row: 2;
+        }
+
+        .Img5 {
+            grid-column: 2;
+            grid-row: 4;
+        }
+
+        .Img6 {
+            grid-column: 3;
+            grid-row: 4;
+        }
+
+        .Img7 {
+            grid-column: 4;
+            grid-row: 4;
+        }
+
+        .Img8 {
+            grid-column: 5;
+            grid-row: 4;
+        }
+
+        .photos {
+            padding-top: 10px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+
+        }
+
+        .text1 {
+            grid-row: 3;
+            grid-column: 2;
+        }
+
+        .text2 {
+            grid-row: 3;
+            grid-column: 3;
+        }
+
+        .text3 {
+            grid-row: 3;
+            grid-column: 4;
+        }
+
+        .text4 {
+            grid-row: 3;
+            grid-column: 5;
+        }
+
+        .text5 {
+            grid-row: 5;
+            grid-column: 2;
+        }
+
+        .text6 {
+            grid-row: 5;
+            grid-column: 3;
+        }
+
+        .text7 {
+            grid-row: 5;
+            grid-column: 4;
+        }
+
+        .text8 {
+            grid-row: 5;
+            grid-column: 5;
+        }
     </style>
 </head>
 
@@ -18,16 +104,35 @@
                 <a href="index.html">Home</a>
                 <a href="services.html">Services</a>
                 <a href="links.html">Industry Links</a>
-                <a href="">Our Team</a>
-                <a href="">Testimonials</a>
-                <a href="">Order Service</a>
+                <a href="team.html">Our Team</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="order.html">Order Service</a>
                 <img src="Images/Logo2.png" alt="BelRed Celebrating 40years" id="rightImg">
             </div>
         </div>
-            
-        </div>
-    </div>
 
+
+
+        <img src="Images/Gal1.jpg" alt="Our workshop" class="Img1 photos">
+        <img src="Images/Gal2.jpg" alt="Some of our work in action" class="Img2 photos">
+        <img src="Images/Gal3.jpg" alt="One of our trucks" class="Img3 photos">
+        <img src="Images/Gal4.jpg" alt="The inside of one of our" class="Img4 photos">
+
+
+        <img src="Images/Gal5.jpg" alt="One of our trucks" class="Img5 photos">
+        <img src="Images/Gal6.jpg" alt="Another one of our trucks" class="Img6 photos">
+        <img src="Images/Gal7.jpg" alt="An example of our work" class="Img7 photos">
+        <img src="Images/Gal8.png" alt="Our seal of recognition from Angie's list" class="Img8 photos">
+
+        <p class="text1">Our workshop</p>
+        <p class="text2">Some of our work in action</p>
+        <p class="text3">The job is underway in this house and will be finished quickly</p>
+        <p class="text4">The organization in the inside of one of our trucks </p>
+        <p class="text5">Our commitement to our roots is to strong we haven't changed since 2005</p>
+        <p class="text6">Our workers on the way to help out some customers</p>
+        <p class="text7">An example of how neat our work is after we leave</p>
+        <p class="text8">In 2015 we won Angie's list super service prize, a major honor and testament to our care for
+            our customers</p>
 
 
 
@@ -36,35 +141,6 @@
     <div class="Footer">
         PO Box 3421, Redmond, WA 98073 | Ph. 425-883-7178 | Fx. 425-885-1865 | Contractor #: BELREES112R2
     </div>
-
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 </body>
 
 </html>
