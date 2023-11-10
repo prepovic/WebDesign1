@@ -6,7 +6,56 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/uvz6uvh.css">
     <style>
+        #info {
+            grid-row: 2;
+            grid-column: 3 / span 2;
+            padding: 10px;
+            text-align: left;
+        }
 
+        #info label {
+            padding: 10px 0px;
+            width: 30%;
+        }
+
+        #info input {
+            width: 90%;
+            align-items: right;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+
+        #request {
+            grid-row: 2;
+            grid-column: 1;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        #other {
+            text-align: start;
+            resize: vertical;
+            overflow: scroll;
+        }
+
+        #confirm {
+            grid-row: 2;
+            grid-column: 5 / span 6;
+            padding: 15px;
+            line-height: 1.5;
+        }
+
+        #submit{
+            background-color: #F5A851;
+            padding: 10px;
+        }
+
+        #final{
+            display: none;
+            grid-column: 5 / span 6;
+            grid-row: 3;
+        }
     </style>
 </head>
 
@@ -26,11 +75,65 @@
             </div>
         </div>
 
+        <form id="info">
+            <br><label for="name">Your name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"><br>
+            <label for="zip">Zipcode:</label>
+            <input type="text" id="zip" name="zip"><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="other">Anything else?</label>
+            <input type="text" id="other" name="other">
+            <input type="button" value="Submit" id="submit" onclick="check()">
+        </form>
+
+        <p id="request">To request service, call us at 425-883-7178 and speak to a team member live! Our normal office
+            hours are 8:00 am-4:00pm Monday-Friday. Online, you can use the form below to contact us anytime. Be sure to
+            fill out the form completely and a team member will contact you regarding your request.</p>
+
+        <p id="confirm">Confirmation will go here: </p>
+        <button id="final" onclick="entered()">Please make sure all information above is correct</button>
+
+
+
     </div>
 
     <div class="Footer">
         PO Box 3421, Redmond, WA 98073 | Ph. 425-883-7178 | Fx. 425-885-1865 | Contractor #: BELREES112R2
     </div>
+
+    <script>
+        function check() {
+            let name = document.getElementById("name").value;
+            let address = document.getElementById("address").value;
+            let zip = document.getElementById("zip").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let other = document.getElementById("other").value;
+
+            if (name != "" && address != "" && zip != "" && email != "" && phone != "") {
+                document.getElementById("confirm").innerHTML = "Name: " + name + "<br> Address: " + address + "<br> Zip code: " + zip + "<br> Email: " + email + "<br> Phone Number: " + phone + "<br> Other requests: " + other;
+                document.getElementById("final").style.display = "block";
+            }
+
+            else {
+                document.getElementById("confirm").innerHTML = "Please insert a value for each prompt"
+            }
+
+        }
+
+        function entered() {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            
+            alert("We will be contacting "+phone+" soon with additional information about your service, thank you "+name+ " for chosing BelRed Electric")
+        }
+    </script>
 </body>
+
 
 </html>
