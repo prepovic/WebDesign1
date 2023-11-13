@@ -18,7 +18,7 @@
             width: 30%;
         }
 
-        #info input  {
+        #info input {
             width: 90%;
             align-items: right;
             padding: 10px;
@@ -46,18 +46,25 @@
             line-height: 1.5;
         }
 
-        #submit{
+        #submit {
             background-color: #F5A851;
             padding: 10px;
             grid-column: 3 / span 2;
         }
 
-        #final{
+        #final {
             background-color: #F5A851;
             display: none;
             grid-column: 5 / span 6;
             grid-row: 3;
             margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        input {
+            font-family: "obvia", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
     </style>
 </head>
@@ -95,11 +102,13 @@
         </form>
 
         <p id="request">To request service, call us at 425-883-7178 and speak to a team member live! Our normal office
-            hours are 8:00 am-4:00pm Monday-Friday. Online, you can use the form to the right to contact us anytime. Be sure to
+            hours are 8:00 am-4:00pm Monday-Friday. Online, you can use the form to the right to contact us anytime. Be
+            sure to
             fill out the form completely and a team member will contact you regarding your request.</p>
 
         <p id="confirm">Insert information to be confirmed </p>
-        <button id="final" onclick="entered()">Please make sure all information above is correct, then click here to submit order</button>
+        <button id="final" onclick="entered()">Please make sure all information above is correct, then click here to
+            submit order</button>
 
 
 
@@ -132,8 +141,8 @@
         function entered() {
             let name = document.getElementById("name").value;
             let phone = document.getElementById("phone").value;
-            
-            alert("We will be contacting "+phone+" soon with additional information about your service, thank you "+name+ " for chosing BelRed Electric")
+
+            alert("We will be contacting " + phone + " soon with additional information about your service, thank you " + name + " for chosing BelRed Electric")
         }
     </script>
 </body>
